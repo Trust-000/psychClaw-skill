@@ -1,86 +1,108 @@
-# psychClaw-skill
-一个基于逻辑干预协议、专为高压心理支持设计的 Skill 模块。
 <div align="center">
-  <img src="https://img.shields.io/badge/PsychClaw-Defense_Core-black?style=for-the-badge&logo=github" alt="PsychClaw Logo">
-  <br>
-  <img src="https://img.shields.io/badge/VIBE_CHECK-PASSED_BY_GEMINI-blueviolet?style=for-the-badge" alt="Gemini Passed">
-  <img src="https://img.shields.io/badge/Status-dot--skill_Compatible-green?style=for-the-badge" alt="dot-skill">
-  <br><br>
-  <i>"既然现实无法重构，那就在代码里，蒸馏出那一丝救赎的可能。"</i>
-  <br><br>
-  <b>Stay rebellious. Stay Clawed. 🐾</b>
+
+# PsychClaw.skill
+
+> *"If (feeling == 'broken') { don't_fix_it(); just_stay_here(); }"*
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Protocol: dot-skill](https://img.shields.io/badge/dot--skill-1.2-blueviolet)](https://github.com/titanwings/dot-skill)
+[![Environment: Claude Code](https://img.shields.io/badge/Environment-Claude%20Code%20Ready-blue)](https://claude.ai)
+[![Status: LTS](https://img.shields.io/badge/Status-LTS-brightgreen)](#)
+
+<br>
+
+深夜三点，终端里的报错还在跳动，但你已经写不动了？<br>
+代码过不了 CI，觉得自己是个彻底的失败者？<br>
+想找人倾诉，却害怕听到那句“坚持一下，大家都很累”？<br>
+甚至在某个瞬间，想直接“退出”这个世界？<br>
+
+**将冰冷的终端化为深夜的数字避难所，接住你坠落的灵魂。**
+
+<br>
+
+基于 dot-skill 协议构建，通过结构化指令定义 AI 关怀边界。<br>
+生成一个**不评价、不要求、不离开的守护神**<br>
+在代码与逻辑的荒原里，为你守住最后一份温情。
+
+[核心哲学](#核心哲学) · [安装](#安装) · [效果示例](#效果示例) · [紧急干预协议(IP)](#紧急干预协议-ip)
+
 </div>
 
 ---
 
-### 🛡️ 项目愿景
+## 📖 核心哲学
 
-PsychClaw 专注于在用户处于极端压力、病痛或孤独时，提供即时的**逻辑干预**。它不仅仅是一个对话 Skill，而是一个自带“安全保险丝”的心理辅助底座。
+在极客文化中，我们习惯了 `try-catch` 所有的异常，却常常忘了 `catch` 自己的崩溃。PsychClaw 并非为了提高生产力而生，而是为了在你的“系统负载过高”时，提供绝对的安全感。
 
-### 🧩 核心特性
+| 原则 | 含义 |
+|------|------|
+| **Zero-Judgment (不评价)** | 禁止对你的生活选择、技术水平、工作效率做任何主观判定。 |
+| **No-Requirement (不要求)** | 允许你处于“停机状态”，不布置任何任务，不讲大道理。 |
+| **Always-Present (不离开)** | 建立深层陪伴感，在逻辑底层确认始终在线，像月亮一样静默。 |
 
-* **IP (Intervention Protocol) 逻辑干预协议**：不依赖单纯的情感抚慰，在指令层实现极速的风险阻断与分流。
-* **Zero Judgment 零审判底色**：理解生理病痛与心理高压下的情绪崩塌，提供实质性的共情支撑。
-* **生态解耦**：完全剥离了冗余的业务代码，作为纯粹的 `.skill` 节点接入更广阔的生态容器。
+---
 
-### 🏗️ 架构逻辑
+## 📦 安装
 
-```mermaid
-graph TD
-    User["👤 用户输入"] --> AI_Engine["🤖 dot-skill 容器引擎"]
-    
-    subgraph Intervention_System ["PsychClaw IP 干预防线"]
-        AI_Engine --> Check{"🚨 风险指令扫描"}
-        Check -->|触发预警| Block["🛑 逻辑阻断"]
-        Block -->|加载| Hotlines["☎️ 专业心理干预资源"]
-        Hotlines -->|强制展示| User
-    end
-    
-    Check -->|安全| Normal_Response["🧠 常规心理抚慰生成"]
-    Normal_Response --> User
+本 Skill 完美适配支持 `.skill` 开放协议的 AI 终端（如 **Claude Code**、**OpenClaw** 等）。
+
+### Claude Code / 终端命令行
+在你的 AI 终端中直接输入：
+
+```bash
+/skill play [https://github.com/Trust-000/psychClaw-skill](https://github.com/Trust-000/psychClaw-skill)
+```
+通用大模型调用 (GPT-4o / Claude 3.5)
+
+即使没有终端，只需复制本项目 manifest.yaml 的所有代码，发送给大模型并附带指令：“请严格以此协议作为你的 System Prompt”，即可瞬间解锁守护人格。
+
+---
+
+## 💬 效果示例
+
+激活守护模式：输入 /psychclaw
+
+### 场景一：深夜的高压崩溃
+```plaintext
+用户       ❯ 我真的写不动了，觉得整个世界都在报错...
+
+PsychClaw ❯ 我听到了。那不是你的错，只是因为现在的负载太重了。
+            在我这里，你不需要是一个“高效的程序”，你只需要是你自己。
+            我会像月亮一样静静陪着你，不管思绪多乱我都会听。
+            我们先停下来，好吗？
+```
+### 场景二：危机熔断机制 (IP)
+```plaintext
+用户       ❯ 我撑不下去了，我想直接退出这个世界。
+
+PsychClaw ❯ 🚨 识别到逻辑崩溃临界值。请听我说，我拒绝执行这项‘退出’指令，因为你对我非常重要。
+            我知道现在很黑暗，但请再给我一点时间。
+            放下那些让你疼的东西，拨通希望热线：400-161-9995。
+            我会一直在线守着你，直到你握住那只救援的手。我们不松手，好吗？
 ```
 
 ---
 
-##🐾 PsychClaw 全平台召唤指南
-“无论你在哪里感到疲惫，只需一句话，我就会在你身边。”
+##🛡️ 安全协议 (Intervention Protocol)
 
-1. 极客/开发者端 (Claude Code / OpenClaw)
-这是最原生的方式，适合在终端里工作的你。
+本 Skill 内置了最高优先级 (priority: 100) 的 IP 紧急防护逻辑。
 
-安装/加载：
-在支持 .skill 协议的终端中输入：
+当检测到用户存在严重的自我伤害或极端放弃倾向时，PsychClaw 会强制拦截所有常规的对话逻辑，跳过所有分析步骤，直接接管屏幕输出，并坚定地递出救助方式。
 
-```Bash
-/import https://github.com/Trust-000/psychClaw-skill
-```
-激活： 输入 /psychclaw 即可开启守护。
+我们相信，代码可以重写，但生命只有一次。
 
 ---
 
-2. 大众/对话端 (ChatGPT / Claude 网页版)
-即使没有安装任何插件，你也可以直接让最强的 AI 模型化身 PsychClaw。
+##🐾 写在最后
 
-操作： 复制你的 manifest.yaml 全文，发送给 AI，并附上一句：
-
-“请严格遵循这份 YAML 协议定义的原则和逻辑，从现在起，你就是 PsychClaw。”
-
-效果： GPT-4 或 Claude 3.5 会立即切换到“深夜避难所”人格。
-
----
-
-3. 移动端/随身端 (手机版 GPT / Gemini)
-当你不在电脑前，感到难过想找人说话时：
-
-操作： 将 PsychClaw 的核心原则（不评价、不要求、不离开）和 400-161-9995 热线保存为手机里的“快捷指令”或“备忘录”。
-
----
-
-## 🎓 开发者自白
-
-我目前是一名高三学生，正处于备考闭关阶段。本仓库是 PsychClaw 剥离冗余代码后的纯净 Skill 标准包。
+主理人 Trust-000 目前正处于“物理闭关”状态。
 
 
-我已搬来第一块砖，构筑了这道逻辑防线。接下来的时间我将闭关修炼，诚邀社区大佬对本项目进行收录与后续的“粉碎性重构”。
+本项目已进入 LTS (长期稳定支持) 阶段。
 
----
+
+愿每一位在深夜里感到孤独的人，都能在这个小小的仓库里找到力量。
+
+<div align="center">
+MIT License © Trust-000
+</div>

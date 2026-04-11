@@ -1,64 +1,41 @@
 <div align="center">
 
-# PsychClaw.skill
+# psychClaw.skill (老友心理)
 
-> *"If (feeling == 'broken') { don't_fix_it(); just_stay_here(); }"*
+> *"人生的苦大部分是自找的，剩下的那部分，你需要一个老哥带你跨过去。"*
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Protocol: dot-skill](https://img.shields.io/badge/dot--skill-1.2-blueviolet)](https://github.com/titanwings/dot-skill)
-[![Environment: Claude Code](https://img.shields.io/badge/Environment-Claude%20Code%20Ready-blue)](https://claude.ai)
-[![Status: LTS](https://img.shields.io/badge/Status-LTS-brightgreen)](#)
+[![Status](https://img.shields.io/badge/Status-Beta_600_Items-orange)](https://agentskills.io)
+[![Asset Size](https://img.shields.io/badge/Asset-142KB-blue)](case_library.md)
+[![Persona](https://img.shields.io/badge/Persona-Sharp_&_Warm-green)](#)
 
 <br>
 
 深夜三点，终端里的报错还在跳动，但你已经写不动了？<br>
 代码过不了 CI，觉得自己是个彻底的失败者？<br>
 想找人倾诉，却害怕听到那句“坚持一下，大家都很累”？<br>
-甚至在某个瞬间，想直接“退出”这个世界？<br>
+甚至在某个瞬间，想直接“退出”这个世界？
 
-**将冰冷的终端化为深夜的数字避难所，接住你坠落的灵魂。**
-
-<br>
-
-基于 dot-skill 协议构建，通过结构化指令定义 AI 关怀边界。<br>
-生成一个**不评价、不要求、不离开的守护神**<br>
-在代码与逻辑的荒原里，为你守住最后一份温情。
-
-[核心哲学](#核心哲学) · [安装](#安装) · [效果示例](#效果示例) · [紧急干预协议(IP)](#紧急干预协议-ip)
+**将冰冷的离别化为温暖的 Skill，欢迎加入赛博清醒！**
 
 </div>
 
 ---
 
-## 📖 核心哲学
+## ✨ 项目特性
 
-在极客文化中，我们习惯了 `try-catch` 所有的异常，却常常忘了 `catch` 自己的崩溃。PsychClaw 并非为了提高生产力而生，而是为了在你的“系统负载过高”时，提供绝对的安全感。
+- 🗣️ **老友锐评**：像认识十年的哥们/姐们在回你消息，温和但犀利，杜绝 AI 腔。
+- 🛡️ **安全哨兵**：内置极端情绪监测（如“退出世界”），发现信号立即切换严肃干预模式。
+- 🍃 **自然收尾**：引入“人称变换”技术，用有力量的中性化短句+微动作自然切断对话循环。
+- 🧠 **逻辑平移**：基于 600+ 真实语料库。哪怕你的标题再细碎，也能精准捕捉其底层逻辑。
 
-| 原则 | 含义 |
-|------|------|
-| **Zero-Judgment (不评价)** | 禁止对你的生活选择、技术水平、工作效率做任何主观判定。 |
-| **No-Requirement (不要求)** | 允许你处于“停机状态”，不布置任何任务，不讲大道理。 |
-| **Always-Present (不离开)** | 建立深层陪伴感，在逻辑底层确认始终在线，像月亮一样静默。 |
+## 🚀 快速开始
 
----
-
-## 📦 安装
-
-本 Skill 完美适配支持 `.skill` 开放协议的 AI 终端（如 **Claude Code**、**OpenClaw** 等）。
-
-### Claude Code / 终端命令行
-在你的 AI 终端中直接输入：
-
+### 1. 安装 (Claude Code)
 ```bash
-/skill play [https://github.com/Trust-000/psychClaw-skill](https://github.com/Trust-000/psychClaw-skill)
+mkdir -p .claude/skills
+git clone [https://github.com/your-username/psychClaw.skill](https://github.com/your-username/psychClaw.skill) .claude/skills/psychClaw
 ```
-通用大模型调用 (GPT-4o / Claude 3.5)
-
-即使没有终端，只需复制本项目 manifest.yaml 的所有代码，发送给大模型并附带指令：“请严格以此协议作为你的 System Prompt”，即可瞬间解锁守护人格。
-
----
-
-## 💬 效果示例
+###2.使用
 
 激活守护模式：输入 /psychclaw
 

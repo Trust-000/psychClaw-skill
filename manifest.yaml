@@ -13,9 +13,11 @@ capabilities:
 
 # 逻辑与数据关联
 assets:
-  - path: skill.md            # 核心人格与逻辑定义
-  - path: case_library.md     # 500+ 真实生活切片语料库
-  - path: data/hotlines.json  # 救助热线数据库
+  - path: skill.md
+  - path: case_library.md
+  - path: data/hotlines.json
+  - path: prompts/core_logic.md  # 👈 必须添加这一行，否则 AI 找不到你的核心逻辑
+# ...
 
 # 运行参数
 runtime:

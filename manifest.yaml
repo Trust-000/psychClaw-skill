@@ -14,7 +14,7 @@ capabilities:
 # 逻辑与数据关联
 assets:
   - path: skill.md            # 核心人格与逻辑定义
-  - path: case_library.md     # 600+ 真实生活切片语料库
+  - path: case_library.md     # 500+ 真实生活切片语料库
   - path: data/hotlines.json  # 救助热线数据库
 
 # 运行参数

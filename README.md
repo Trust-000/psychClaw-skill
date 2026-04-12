@@ -64,7 +64,7 @@ mkdir -p .claude/skills
 git clone [https://github.com/your-repo/psychClaw.skill](https://github.com/Trust-000/psychClaw.skill) .claude/skills/psychClaw
 ```
 ### 2.调用
-激活指令：/psychClaw
+激活指令：/psychClaw＋问题
 
 ---
 
